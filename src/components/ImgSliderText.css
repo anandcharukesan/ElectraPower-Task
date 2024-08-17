@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Avenir:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 1300px;
+  margin: 50px auto 50px auto; 
+  padding: 0px 20px; 
+}
+
+.slider-container {
+  flex: 1;
+  width: 80%; 
+  height: 500px; 
+  margin-right: 10%;
+}
+
+.text-section {
+  flex: 1; 
+}
+
+.title {
+  margin-top: 25%;
+  font-size: 17px; 
+  margin-bottom: 10px; 
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: var(--title);
+}
+
+.content {
+  color: var(--content);
+  font-family: "Avenir";
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 23.14px; 
+  padding-right: 20%;
+}
+
+.text-section p {
+  font-size: 1rem; 
+  line-height: 1.5; 
+}
+
+.divider {
+  border: none; 
+  height: 1px; 
+  background-color: #ccc; 
+  margin: 10px 0; 
+  width: 20%; 
+}

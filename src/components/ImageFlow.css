@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Avenir:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+
+/* src/components/ImageFlow.css */
+.image-flow-wrapper {
+    margin: 50px auto 50px auto;
+    width: 1300px;
+    font-family: 'Montserrat';
+  }
+  
+  .image-flow-container {
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--imgFlowBg); /* Background color of the container */
+    height: 400px;
+    width: 100%; /* Height of the container */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position relative for inner elements */
+    padding: 20px; /* Add padding to all sides */
+    box-sizing: border-box; /* Ensure padding is included in total width/height */
+  }
+
+  .divider {
+    border: none; 
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 10px 0; 
+    width: 50px; 
+  }
+  
+  .image-container {
+    border-radius: 12px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start; /* Align image to the left */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .image-container img {
+    height: 100%; /* Full height of the container */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing between images */
+    animation: scroll 25s linear infinite; /* Animation for scrolling */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Start from the beginning */
+    }
+    100% {
+      transform: translateX(-50%); /* Move to the left by 50% of the container width */
+    }
+  }
+  
+  .text-content {
+    color: white; /* Text color */
+    padding: 20px; /* Padding around text */
+    padding-left: 50px;
+    flex: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* Center the text vertically */
+  }
+  
+
+  .ourPortfolio{
+    font-size: 34px; /* Title font size */
+    margin-bottom: 0; /* Space below title */
+    color: var(--navButtonBg);
+    font-family: "Avenir";
+    margin-top: 0;
+    font-weight: 300;
+  }
+
+  .ourPortfolio .port{
+    color: var(--port );
+  }
+
+  .title {
+    font-size: 24px; /* Title font size */
+    margin-bottom: 10px; /* Space below title */
+    color: var(--navBg);
+    font-family: "Avenir";
+    font-weight: 300;
+    color: var(--title);
+  }
+  
+
+  .HaveALook {
+    font-size: 21px; /* Title font size */
+    margin-bottom: 10px; /* Space below title */
+    color: var(--navBg);
+    font-family: "Avenir";
+    font-weight: 300;
+    color: var(--navBg);
+  }
+  
+  .text-content .content {
+    font-size: 15px; /* Content font size */
+    line-height: 1.5; /* Line height for readability */
+    color: var(--navBg);
+  }
+
+
+  .exploreBtn {
+    border: 1px solid var(--navButtonBg);
+    background-color: #F1761D;
+    color: white;
+    padding: 8px 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: fit-content;
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  

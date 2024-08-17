@@ -1,0 +1,58 @@
+.tube {
+    position: absolute;
+    background-color: var(--navBg);
+    height: 210px; /* Height of the main tube */
+    width: 700px; /* Width of the main tube */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 500px 0 0 500px;
+    transition: background-color 0.3s ease;
+}
+
+.tube .tubeName {
+    font-size: 21px;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+
+.tube .tubeNumber {
+    font-size: 100px;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.03);
+}
+
+/* Hidden tube styles */
+.hidden-tube {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 0; /* Position it directly over the main tube */
+    left: 0; /* Align with the main tube */
+    width: 700px; /* Same width as the main tube */
+    height: 189px; /* Same height as the main tube */
+    background-color: var(--navBg); /* Same background color */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Same border */
+    border-radius: 500px 0 0 500px; /* Same border radius */
+    padding: 10px; /* Optional padding */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0; /* Initially transparent */
+    transform: translateY(-10px); /* Slightly move it up for effect */
+}
+
+/* Show hidden tube on hover */
+.tube:hover .hidden-tube {
+    display: block; /* Show on hover */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move into position */
+}
+
+/* Style for the text inside the hidden tube */
+.hidden-tube-name {
+    color: rgba(0, 0, 0, 0.8); /* Adjust color as needed */
+    font-size: 21px; /* Same font size as tubeName */
+    position: absolute;
+    top: 70px; /* Align with the main tube name */
+    left: 40px; /* Align with the main tube name */
+}

@@ -1,0 +1,64 @@
+/* src/components/routetosucess.css */
+@import url('https://fonts.googleapis.com/css2?family=Avenir:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+.landing-page {
+    text-align: left;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 1300px;
+    margin: 50px auto 50px auto;
+    font-family: 'Avenir';
+}
+
+.heading {
+    font-size: 30px;
+    color: var(--heading);
+    font-family: "Avenir";
+    margin-left: 10px;
+}
+
+.success {
+    color: var(--navButtonBg);
+    font-weight: bold;
+    font-family: "Avenir";
+}
+
+.successheading {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    font-size: 3rem;
+    margin-top: 25px;
+    color: var(--heading);
+    font-weight: 100;
+}
+
+.routeImg {
+    height: 215px;
+}
+
+.routeImgDiv {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.tubeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin: 130px 0 100px 0;
+}

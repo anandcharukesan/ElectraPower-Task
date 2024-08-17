@@ -1,0 +1,18 @@
+:root {
+    --navBg: #fafafa;
+    --navButtonBg: #FF6B2B;
+    --port: #2489de;
+    --enquire: #ffffff;
+    --about: #2A2C33;
+    --contact: #2C2F3D;
+    --navText: #2A2C33;
+    --heading:#393B3E;
+    --title:#202632;
+    --content:#161B26;
+    --imgFlowBg: #262626;
+  }
+  
+
+body{
+    margin: 0;
+}
