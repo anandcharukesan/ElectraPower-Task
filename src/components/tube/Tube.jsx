@@ -17,11 +17,15 @@ const Tube = (props) => {
         color: props.current === "true" ? "rgba(243, 243, 243, 0.1)" : undefined
     };
 
+    const hiddenTubeStyle = {
+        width: props.width
+    }
+
     return (
         <div className='tube' style={customStyle}>
             <p className='tubeName' style={nameStyle}>{props.name}</p>
             <p className='tubeNumber' style={numStyle}>{props.number}</p>
-            <div className='hidden-tube'>
+            <div className='hidden-tube' style={hiddenTubeStyle}>
                 <span className='hidden-tube-name'>{props.hiddenName}</span>
             </div>
         </div>
