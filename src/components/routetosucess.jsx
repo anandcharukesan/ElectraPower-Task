@@ -1,6 +1,6 @@
 // src/components/RouteToSuccess.js
 import React from 'react';
-import '../components/routetosucess.css';
+import './routetosucess.css';
 import Tube from './tube/Tube';
 
 const RouteToSuccess = () => {
