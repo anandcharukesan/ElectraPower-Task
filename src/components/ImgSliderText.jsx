@@ -1,4 +1,4 @@
-// src/components/ImgSlider.jsx
+
 import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";

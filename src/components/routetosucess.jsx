@@ -1,4 +1,4 @@
-// src/components/RouteToSuccess.js
+
 import React from 'react';
 import './routetosucess.css';
 import Tube from './tube/Tube';

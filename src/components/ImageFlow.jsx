@@ -1,14 +1,12 @@
-// src/components/ImageFlow.jsx
+
 import React from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
-import './ImageFlow.css'; // Import the CSS file for styling
-
+import './ImageFlow.css'; 
 const ImageFlow = () => {
   return (
     <div className="image-flow-wrapper">
       <div className="image-flow-container">
         <div className="image-container">
-          {/* Duplicate the image for seamless looping */}
           <img src=".\RollImg.png" alt="Scrolling" />
           <img src=".\RollImg.png" alt="Scrolling" />
         </div>

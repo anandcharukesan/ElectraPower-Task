@@ -22,15 +22,15 @@
   margin-top: 25%;
   font-size: 17px; 
   margin-bottom: 10px; 
-  font-family: "Montserrat", sans-serif; /* Ensure Montserrat is defined as well */
+  font-family: "Montserrat", sans-serif; 
   font-weight: 400;
   color: var(--title);
 }
 
 .content {
   color: var(--content);
-  font-family: 'Avenir', sans-serif; /* Use Avenir font */
-  font-weight: 350; /* Ensure this weight is available */
+  font-family: 'Avenir', sans-serif;
+  font-weight: 350; 
   font-size: 15px;
   line-height: 23.14px; 
   padding-right: 20%;

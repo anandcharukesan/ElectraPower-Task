@@ -1,14 +1,13 @@
 @font-face {
     font-family: 'Avenir';
-    src: url('./fonts/AvenirLTStd-Medium.otf') format('truetype'); /* Adjust the path as necessary */
+    src: url('./fonts/AvenirLTStd-Medium.otf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('./fonts/Montserrat-Regular.ttf') format('truetype'); /* Adjust the path as necessary */
-    font-weight: normal;
+    src: url('./fonts/Montserrat-Regular.ttf') format('truetype'); 
     font-style: normal;
 }
 
