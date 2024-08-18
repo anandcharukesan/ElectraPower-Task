@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Avenir:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 
 
-/* src/components/ImageFlow.css */
+
 .image-flow-wrapper {
     margin: 50px auto 50px auto;
     width: 1300px;
@@ -14,13 +14,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: var(--imgFlowBg); /* Background color of the container */
+    background-color: var(--imgFlowBg); 
     height: 400px;
-    width: 100%; /* Height of the container */
-    overflow: hidden; /* Hide overflow */
-    position: relative; /* Position relative for inner elements */
-    padding: 20px; /* Add padding to all sides */
-    box-sizing: border-box; /* Ensure padding is included in total width/height */
+    width: 100%; 
+    overflow: hidden; 
+    position: relative; 
+    padding: 20px; 
+    box-sizing: border-box; 
   }
 
   .divider {
@@ -35,41 +35,41 @@
     border-radius: 12px;
     width: 50%;
     display: flex;
-    justify-content: flex-start; /* Align image to the left */
-    align-items: center; /* Center the image vertically */
-    overflow: hidden; /* Hide overflow */
+    justify-content: flex-start; 
+    align-items: center; 
+    overflow: hidden;
   }
   
   .image-container img {
-    height: 100%; /* Full height of the container */
-    width: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add some spacing between images */
-    animation: scroll 25s linear infinite; /* Animation for scrolling */
+    height: 100%; 
+    width: auto; 
+    margin-right: 10px; 
+    animation: scroll 25s linear infinite; 
   }
   
   @keyframes scroll {
     0% {
-      transform: translateX(0); /* Start from the beginning */
+      transform: translateX(0); 
     }
     100% {
-      transform: translateX(-50%); /* Move to the left by 50% of the container width */
+      transform: translateX(-50%); 
     }
   }
   
   .text-content {
-    color: white; /* Text color */
-    padding: 20px; /* Padding around text */
+    color: white; 
+    padding: 20px; 
     padding-left: 50px;
-    flex: 1; /* Take remaining space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: start; /* Center the text vertically */
+    justify-content: start; 
   }
   
 
   .ourPortfolio{
-    font-size: 34px; /* Title font size */
-    margin-bottom: 0; /* Space below title */
+    font-size: 34px; 
+    margin-bottom: 0; 
     color: var(--navButtonBg);
     font-family: "Avenir";
     margin-top: 0;
@@ -81,8 +81,8 @@
   }
 
   .title {
-    font-size: 24px; /* Title font size */
-    margin-bottom: 10px; /* Space below title */
+    font-size: 24px; 
+    margin-bottom: 10px; 
     color: var(--navBg);
     font-family: "Avenir";
     font-weight: 300;
@@ -91,8 +91,8 @@
   
 
   .HaveALook {
-    font-size: 21px; /* Title font size */
-    margin-bottom: 10px; /* Space below title */
+    font-size: 21px; 
+    margin-bottom: 10px; 
     color: var(--navBg);
     font-family: "Avenir";
     font-weight: 300;
@@ -100,8 +100,8 @@
   }
   
   .text-content .content {
-    font-size: 15px; /* Content font size */
-    line-height: 1.5; /* Line height for readability */
+    font-size: 15px; 
+    line-height: 1.5; 
     color: var(--navBg);
   }
 

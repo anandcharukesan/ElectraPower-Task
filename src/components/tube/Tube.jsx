@@ -29,7 +29,8 @@ const Tube = (props) => {
             <p className='tubeName' style={nameStyle}>{props.name}</p>
             <p className='tubeNumber' style={numStyle}>{props.number}</p>
             <div className='hidden-tube'>
-                <span className='hidden-tube-name'>{props.hiddenName}</span>
+                {/* Render the image in the hidden tube */}
+                <img src={props.hiddenImage} alt={props.name} className='hidden-tube-image' />
             </div>
         </div>
     );
