@@ -9,7 +9,7 @@ const ImageFlow = () => {
       <div className="image-flow-container">
         <div className="image-container">
           {/* Duplicate the image for seamless looping */}
-          <img src="..\src\assets\Images\Group 22825.png" alt="Scrolling" />
+          <img src="..\src\assets\Images\xGroup 22825.png" alt="Scrolling" />
           <img src="..\src\assets\Images\Group 22825.png" alt="Scrolling" />
         </div>
         <div className="text-content">
