@@ -1,16 +1,50 @@
+:root {
+    --navBg: #fafafa; /* Background color for the main tubes */
+    --navButtonBg: #FF6B2B; /* Orange color for the current tube */
+    --port: #2489de;
+    --enquire: #ffffff;
+    --about: #2A2C33;
+    --contact: #2C2F3D;
+    --navText: #2A2C33;
+    --heading: #393B3E;
+    --title: #202632;
+    --content: #161B26;
+    --imgFlowBg: #262626;
+    --hiddentube: #4A95DA; /* Color for the hidden tubes */
+}
+
+body {
+    margin: 0;
+}
+
 .tube {
     position: absolute;
-    background-color: var(--navBg);
+    background-color: var(--navBg); /* Default background color for all tubes */
     height: 210px; /* Height of the main tube */
     width: 700px; /* Width of the main tube */
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 500px 0 0 500px;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform to transition */
+    cursor: pointer; /* Add cursor pointer for click effect */
 }
 
-/* Hover effect for the main tube */
-.tube:hover {
-    transform: translateX(5px); /* Move right when hovered */
+/* Specific styles for the fourth tube */
+.tube:nth-child(4) {
+    background-color: var(--navButtonBg); /* Set orange color for the fourth tube */
+}
+
+/* Hover effect for the fourth tube */
+.tube:nth-child(4):hover {
+    background-color: #FFFFFF; /* Change to white on hover */
+}
+
+/* Click effect for the tubes */
+.tube.clicked {
+    transform: translateX(10px); /* Move the clicked tube slightly forward */
+}
+
+.tube.clicked + .tube {
+    transform: translateX(-10px); /* Move the next tube slightly backward */
 }
 
 /* Hidden tube styles */
@@ -21,19 +55,19 @@
     left: 0; /* Align with the main tube */
     height: 210px; /* Same height as the main tube */
     width: 700px; /* Same width as the main tube */
-    background-color: var(--navBg); /* Same background color */
+    background-color: var(--hiddentube); /* Use the --hiddentube color for hidden tubes */
     border: 1px solid rgba(0, 0, 0, 0.2); /* Same border */
     border-radius: 500px 0 0 500px; /* Same border radius */
     transition: opacity 0.3s ease, transform 0.3s ease; /* Ensure smooth transition */
     opacity: 0; /* Initially transparent */
-    transform: translateY(-10px); /* Slightly move it up for effect */
+    transform: translateX(100%); /* Start off-screen to the right */
 }
 
 /* Show hidden tube on hover */
 .tube:hover .hidden-tube {
     display: block; /* Show on hover */
     opacity: 1; /* Fade in */
-    transform: translateY(0) translateX(5px); /* Move into position and to the right */
+    transform: translateX(0); /* Move into position from the right */
 }
 
 /* Style for the text inside the tubes */
@@ -53,11 +87,6 @@
     left: 50px; /* Align with the main tube number */
     font-weight: bold;
     color: rgba(0, 0, 0, 0.03); /* Consistent color */
-}
-
-/* Hover effect for the hidden tube */
-.tube:hover .hidden-tube {
-    transform: translateY(0) translateX(5px); /* Move right when hovered */
 }
 
 /* Additional hover effect for the main tube and hidden tube */

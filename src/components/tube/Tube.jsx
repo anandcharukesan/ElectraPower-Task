@@ -1,12 +1,19 @@
 // src/components/tube/Tube.js
-import React from 'react';
+import React, { useState } from 'react';
 import "./Tube.css";
 
 const Tube = (props) => {
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+        // Toggle the clicked state
+        setIsClicked(!isClicked);
+    };
+
     const customStyle = {
         left: props.left,
         width: props.width,
-        backgroundColor: props.current === "true" ? "#FF6B2B" : undefined
+        backgroundColor: props.current === "true" ? "#FF6B2B" : undefined // Use navButtonBg for the current tube
     };
 
     const nameStyle = {
@@ -17,15 +24,11 @@ const Tube = (props) => {
         color: props.current === "true" ? "rgba(243, 243, 243, 0.1)" : undefined
     };
 
-    const hiddenTubeStyle = {
-        width: props.width
-    }
-
     return (
-        <div className='tube' style={customStyle}>
+        <div className={`tube ${isClicked ? 'clicked' : ''}`} style={customStyle} onClick={handleClick}>
             <p className='tubeName' style={nameStyle}>{props.name}</p>
             <p className='tubeNumber' style={numStyle}>{props.number}</p>
-            <div className='hidden-tube' style={hiddenTubeStyle}>
+            <div className='hidden-tube'>
                 <span className='hidden-tube-name'>{props.hiddenName}</span>
             </div>
         </div>
